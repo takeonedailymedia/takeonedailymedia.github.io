@@ -1,0 +1,245 @@
+/*** Home Page ***/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #F8FAF6;
+  display: grid;
+}
+
+section {
+  float: left;
+  margin: 1%;
+}
+
+/*** the exterior edge of any grid - grid needs to go inside of the container)***/
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "nav"
+    "hero"
+    "project1"
+    "project2"
+    "footer-container"
+    "footer-social";
+    margin: 0 auto;
+    overflow: hidden;
+    width: 80%;
+}
+
+.nav {
+  grid-area: nav;
+  padding: 2rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+
+/*** CM logo ***/
+.logo img {
+  float: left;
+  height: auto;
+  width: 20rem;
+}
+
+.NavLinks {
+  float: right;
+  list-style: none;
+  margin-top: 5rem;
+
+}
+
+.NavLinks li {
+  display: inline-block;
+
+}
+
+.NavLinks li a {
+  color: #858E8C;
+  text-decoration: none;
+  padding: 5px 25px;
+  font-family: "Lato";
+  font-size: 5rem;
+}
+
+.NavLinks li a:hover {
+  color: #639AAA;
+  font-weight: 600;
+}
+
+
+p {
+ font-size: 1.6rem;
+ line-height: 2rem;
+}
+
+
+.hero {
+  grid-area: hero;
+  padding-bottom: 2rem;
+}
+
+.hero h1 {
+  font-family: "Anton";
+  font-size: 10rem;
+  padding: 5rem;
+}
+
+.hero p {
+  font-size: 5rem;
+  font-family: "Lato";
+  padding: 2rem 5rem 0 5rem;
+}
+
+
+.project1 {
+  background-color: #DFE4DB;
+  grid-area: project1;
+  padding: 5rem;
+}
+
+.project2 {
+  background-color: #DFE4DB;
+  grid-area: project2;
+  padding: 5rem;
+}
+
+h1, .project1, .project2 {
+  color: black;
+  font-family: "Anton";
+  font-size: 8rem;
+  font-weight: 900;
+  padding-top: 5rem;
+}
+
+p, .project1, .project2 {
+  color: black;
+  font-family: "Lato";
+  font-size: 5rem;
+  font-weight: 900;
+  padding-top: 5rem;
+}
+
+.logo {
+  padding: 0rem;
+}
+
+button {
+  background-color: #858E8C;
+  border: none;
+  border-radius: .5rem;
+  color: #ffffff;
+  font-family: "Lato";
+  font-size: 4rem;
+  font-weight: 900;
+  height: 4rem;
+  margin: 5rem 5rem 5rem 0;
+  width: 10rem;
+}
+
+
+
+footer {
+  background-color: #F8FAF6;
+  width: 100%;
+}
+
+.footer-container {
+  grid-area: footer-container;
+  padding: 5rem 5rem;
+  color: #639AAA;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-container p {
+  color: gray;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-social {
+  grid-area: footer-social;
+  list-style: none;
+}
+
+ul.footer-social {
+  background-color: #F8FAF6;
+  display: grid;
+  font-size: 5rem;
+  grid-template-columns: repeat(5, 2fr);
+  padding: 4rem 0;
+}
+
+}
+
+  /* Desktop */
+@media screen (min-width: 120rem) {
+  .container {
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas:
+    "nav                  nav               nav"
+    "hero                 hero              hero"
+    "project1             .                 project2"
+    "footer-container     footer-container  footer-container"
+    "footer-social        footer-social     footer-social";
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 100px;
+    width: 100rem;
+  }
+
+  section {
+    float: left;
+    margin: 1%;
+    width: 48%;
+  }
+
+  .footer-container {
+    background-color: #F8FAF6;
+    font-size: 1.3rem;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 5rem;
+    line-height: 1.4rem;
+  }
+
+  /* Tablet */
+@media screen (min-width: 70rem) {
+  .container {
+    grid-template-columns: 6fr 6fr;
+    grid-template-areas:
+      "nav                  nav"
+      "hero                 hero"
+      "project1             project2"
+      "footer-container     footer-social";
+    width: 80%;
+
+  }
+
+    section {
+      float: left;
+      margin: 1%;
+      width: 98%;
+  }
+
+  .footer-container {
+    background-color: #F8FAF6;
+    font-size: 1.3rem;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 5rem;
+    line-height: 1.4rem;
+  }
+
+
+}
