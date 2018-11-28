@@ -18,7 +18,6 @@ section {
   margin: 1%;
 }
 
-/*** the exterior edge of any grid - grid needs to go inside of the container)***/
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -31,7 +30,8 @@ section {
     "footer-social";
     margin: 0 auto;
     overflow: hidden;
-    width: 80%;
+    width: auto;
+
 }
 
 .nav {
@@ -50,6 +50,12 @@ section {
   width: 20rem;
 }
 
+/* HQ Image */
+.HQHomepage {
+  width: 100%;
+  display: block;
+}
+
 .NavLinks {
   float: right;
   list-style: none;
@@ -66,7 +72,7 @@ section {
   color: #858E8C;
   text-decoration: none;
   padding: 5px 25px;
-  font-family: "Lato";
+  font-family: "Raleway";
   font-size: 5rem;
 }
 
@@ -76,27 +82,9 @@ section {
 }
 
 
-p {
- font-size: 1.6rem;
- line-height: 2rem;
-}
-
-
 .hero {
   grid-area: hero;
-  padding-bottom: 2rem;
-}
-
-.hero h1 {
-  font-family: "Anton";
-  font-size: 10rem;
   padding: 5rem;
-}
-
-.hero p {
-  font-size: 5rem;
-  font-family: "Lato";
-  padding: 2rem 5rem 0 5rem;
 }
 
 
@@ -112,37 +100,42 @@ p {
   padding: 5rem;
 }
 
-h1, .project1, .project2 {
+h1 {
   color: black;
   font-family: "Anton";
   font-size: 8rem;
   font-weight: 900;
-  padding-top: 5rem;
+  padding: 5rem 0rem;
 }
 
-p, .project1, .project2 {
+h2 {
   color: black;
   font-family: "Lato";
+  padding-bottom: 5rem;
+
+
+}
+p {
+  color: black;
+  font-family: "Raleway";
   font-size: 5rem;
   font-weight: 900;
-  padding-top: 5rem;
-}
+  line-height: 7rem;
+  word-wrap: break-word;
 
-.logo {
-  padding: 0rem;
 }
 
 button {
   background-color: #858E8C;
-  border: none;
+  border: 2rem;
   border-radius: .5rem;
   color: #ffffff;
-  font-family: "Lato";
-  font-size: 4rem;
-  font-weight: 900;
-  height: 4rem;
+  font-family: "Raleway";
+  font-size: 5rem;
+  font-weight: 800;
   margin: 5rem 5rem 5rem 0;
-  width: 10rem;
+  text-decoration: none;
+  width: fit-content;
 }
 
 

@@ -8,11 +8,11 @@
     "project-hero1"
     "project-hero2"
     "project-intro1"
-    "project-intro2"
     "user-research1"
     "user-research2"
     "comp-anal"
-    "user-persona"
+    "User-persona1"
+    "User-persona2"
     "user-stories1"
     "user-stories2"
     "userflows1"
@@ -34,15 +34,14 @@
     "footer-container"
     "footer-social";
     margin: 0 auto;
-    overflow: hidden;
+    width: auto;
 
 }
 
-
 /*** each grid box ***/
 
-.project-hero1, .project-hero2, .project-intro1, .project-intro2, .user-research1, .user-research2, .comp-anal,
-.user-persona, .user-stories1, .user-stories2, .userflows1,
+.project-hero1, .project-hero2, .project-intro1, .user-research1, .user-research2, .comp-anal,
+.User-persona1, .User-persona2, .user-stories1, .user-stories2, .userflows1,
 .userflows2, .Wireframes1, .Wireframes2, .Usability-Test1, .Usability-Test2,
 .visual-design1, .visual-design2, .branding1, .branding2,
 .style-guide1, .style-guide2, .high-fidelity1, .high-fidelity2,
@@ -50,14 +49,17 @@
   background-color: #DFE4DB;
   display: grid;
   grid-template-columns: 1fr;
-  padding: 5rem 2rem;
+  padding: 5rem;
+  word-wrap: break-word;
+
+
 
 }
 
 /*** h1 for all sections ***/
 
-h1, .project-hero2, .project-intro1, .project-intro2, .user-research1,
-.user-research2, .comp-anal, .user-persona, .user-stories1, .user-stories2,
+h1, .project-hero2, .project-intro1, .user-research1,
+.user-research2, .comp-anal, .User-persona1, .User-person2, .user-stories1, .user-stories2,
 .userflows1, .userflows2, .Wireframes1, .Wireframes2, .Usability-Test1,
 .Usability-Test2, .visual-design1, .visual-design2, .branding1,
 .branding2, .style-guide1, .style-guide2, .high-fidelity1,
@@ -65,21 +67,27 @@ h1, .project-hero2, .project-intro1, .project-intro2, .user-research1,
   font-family: "Anton";
   font-size: 6rem;
   font-weight: 900;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
   color: black;
 }
 
 /*** project hero ***/
 .project-hero1 {
   grid-area: project-hero1;
+  padding: 0;
+}
+
+.project-hero1 img {
+  width: 100%;
+  display: block;
 }
 
 .project-hero2 {
   grid-area: project-hero2;
 }
 
-p, .project-hero2 {
-  font-family: "Lato";
+p.project-hero2 {
+  font-family: "Raleway";
   font-size: 4rem;
   font-weight: 600;
   padding-top: .5rem;
@@ -91,77 +99,108 @@ p, .project-hero2 {
   grid-area: project-intro1;
 }
 
-p, .project-intro1 {
-  font-family: "Lato";
+
+p.project-intro1 {
+  font-family: "Raleway";
   font-size: 4rem;
   font-weight: 900;
   padding-top: 2rem;
   color: black;
 }
 
-.project-intro2 {
-  grid-area: project-intro2;
+.HQHomepage {
+  width: 100%;
+  display: block;
 }
-
 
 /*** user-research ***/
 .user-research1 {
   grid-area: user-research1;
 }
 
-p, .user-research1, {
-    font-weight: 400;
+p.user-research1, {
+    font-weight: 200;
+    word-wrap: break-word;
+    padding: 5rem;
 }
 
 .user-research2 {
     grid-area: user-research2;
+    padding: 5rem;
 }
 
-h2, .user-research2 {
-    font-family: "Anton";
+h2.user-research2 {
+    font-family: "Lato";
     font-size: 5rem;
     padding-top: 2rem;
 }
 
+.Question1 {
+    padding-top: 5rem;
+}
+
+.Chart1, .Chart2 {
+    padding: 5rem;
+    width: 100%;
+    display: block;
+}
+
+.ur-stats {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
 
 /*** Comp Analysis ***/
-
 .comp-anal {
     grid-area: comp-anal;
+    padding: 5rem;
 }
 
 .Quote {
     font-style: italic;
     font-weight: 600;
-    line-height: 3rem;
+
+}
+
+.Competitive-Analysis {
+    /* padding: 5rem; */
+    width: 100%;
+    display: block;
 }
 
 /*** User Persona - need to redo!! ***/
-.user-persona {
-    grid-area: user-persona;
+.User-persona1 {
+    grid-area: User-persona1;
+
 }
 
-.up-header {
-    font-family: "Lato";
-    font-weight: 800;
-    line-height: 2rem;
+.User-persona2 {
+    grid-area: User-persona2;
 }
 
-ul {
-    font-family: "Lato";
-    font-weight: 600;
-    line-height: 4rem;
+.username {
+  font-family: "Lato";
+  font-size: 5rem;
+  font-weight: 900;
+  padding: 5rem 0;
 }
+
 
 
 /*** user-stories ***/
-
 .user-stories1 {
     grid-area: user-stories1;
+
 }
 
 .user-stories2 {
     grid-area: user-stories2;
+}
+
+.userstories1 {
+  padding-top: 5rem;
 }
 
 /*** user-flows ***/
@@ -173,13 +212,10 @@ ul {
     grid-area: user-flows2;
 }
 
-.userflows1-img {
-    padding: 5rem;
-}
-
-
-.userflows2-img {
-    padding: 5rem;
+.userflows1-img .userflows2-img {
+    /* padding: 5rem; */
+    width: 100%;
+    display: block;
 }
 
 /*** Wireframes ***/
@@ -200,6 +236,10 @@ ul {
 
 .Usability-Test2 {
     grid-area: Usability-Test2;
+}
+
+.usabilitytesting1 {
+    padding-top: 5rem;
 }
 
 /*** visual-design ***/
@@ -224,8 +264,10 @@ ul {
     grid-area: branding2;
 }
 
-.color-palette, .logo-set {
-  padding-top: 2rem;
+.logo-set {
+  /* padding-top: 2rem; */
+  width: 100%;
+  display: block;
 }
 
 /*** style-guide ***/
@@ -250,6 +292,9 @@ ul {
     grid-area: high-fidelity2;
 }
 
+.HF-Mockups1 {
+  padding-top: 2rem;
+}
 
 
 /*** çonclusion ***/
@@ -261,16 +306,22 @@ ul {
     grid-area: çonclusion2;
 }
 
+.conc-img {
+  width: 100%;
+  display: block;
+}
+
   /* Desktop */
 @media screen (min-width: 120rem) {
   .container {
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas:
     "nav                nav                   nav"
-    "project-hero1      project-hero1         project-hero1project-hero1"
-    "project-hero2      project-hero2         project-hero2"
+    "project-hero1      project-hero2         project-hero2"
+    "project-intro1     project-intro1        project-intro1"
     "user-research1     user-research1        user-research2"
-    "comp-anal          comp-anal             user-persona"
+    "comp-anal          comp-anal             comp-anal"
+    "User-persona1      .                     User-persona2"
     "user-stories1      user-stories1         user-stories2"
     "userflows1         userflows1            userflows2"
     "Wireframes1        Wireframes1           Wireframes2"
@@ -286,12 +337,13 @@ ul {
     overflow: hidden;
     padding-bottom: 100px;
     width: 100rem;
+
   }
 
   section {
     float: left;
     margin: 1%;
-    width: 48%;
+    width: 100%;
   }
 
   .footer-container {
@@ -311,11 +363,12 @@ ul {
       grid-template-columns: 6fr 6fr;
       grid-template-areas:
       "nav                ."
-      "project-hero       project-hero"
+      "project-hero1      project-hero1"
       "project-hero2      project-hero2"
-      "project-intro1     project-intro2"
+      "project-intro1     project-intro1"
       "user-research1     user-research2"
-      "comp-anal          user-persona"
+      "comp-anal          ."
+      "User-persona1      User-persona2"
       "user-stories1      user-stories2"
       "userflows1         userflows2"
       "Wireframes1        Wireframes2"
@@ -329,13 +382,12 @@ ul {
       "footer-social      footer-social";
       margin: 0 auto;
       width: 80%;
-
   }
 
     section {
       float: left;
       margin: 1%;
-      width: 98%;
+      width: 80%;
   }
 
 
