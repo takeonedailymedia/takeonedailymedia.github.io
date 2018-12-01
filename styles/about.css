@@ -1,0 +1,128 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "nav"
+    "cherie-img"
+    "intro"
+    "about-graph"
+    "mainsection"
+    "footer-container"
+    "footer-social";
+    margin: 0 auto;
+    width: auto;
+    overflow: hidden;
+}
+
+h4 {
+  color: black;
+  font-family: 'Anton', sans-serif;
+  font-size: 6rem;
+  font-weight: 400;
+  padding: 5rem 0rem;
+
+}
+
+
+/*** each grid box ***/
+
+.cherie-img, .intro, .about-graph, .mainsection {
+  background-color: #DFE4DB;
+  display: grid;
+  grid-template-columns: 1fr;
+  word-wrap: break-word;
+}
+
+/*** project hero ***/
+.cherie-img {
+  grid-area: cherie-img;
+  padding: 0;
+}
+
+.cherie-img img {
+  width: 100%;
+  display: block;
+}
+
+/*** about-graph ***/
+.about-graph {
+  grid-area: about-graph;
+  padding: 0;
+}
+
+img .about-graph {
+  width: 100%;
+  display: block;
+}
+
+/*** main section ***/
+.mainsection {
+  grid-area: mainsection;
+  padding: 0;
+}
+
+
+/* Desktop */
+@media screen (max-width: 1200px) {
+.container {
+  grid-template-columns: 2fr 8fr 2fr;
+  grid-template-areas:
+  "nav              nav               nav"
+  "cherie-img       cherie-img        cherie-img"
+  "intro            intro             mainsection"
+  "about-graph      about-graph       mainsection"
+  "footer-container footer-container  footer-container"
+  "footer-social    footer-social     footer-social";
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 100px;
+  width: 100%;
+}
+
+section {
+  float: left;
+  margin: 1%;
+  width: 100%;
+}
+
+.footer-container {
+  background-color: #F8FAF6;
+  font-size: 1.3rem;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 100px;
+  line-height: 1.4rem;
+  }
+}
+
+/* Tablet */
+@media screen (max-width: 700px) {
+.container {
+    grid-template-columns: 6fr 6fr;
+    grid-template-areas:
+    "nav              nav"
+    "cherie-img       cherie-img"
+    "intro            mainsection"
+    "about-graph      ."
+    "footer-container footer-container"
+    "footer-social    footer-social";
+    margin: 0 auto;
+    width: 80%;
+}
+
+  section {
+    float: left;
+    margin: 1%;
+    width: 80%;
+}
+
+
+.footer-container {
+    background-color: #F8FAF6;
+    font-size: 1.3rem;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 5rem;
+    line-height: 1.4rem;
+  }
+}

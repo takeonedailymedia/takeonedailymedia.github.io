@@ -35,7 +35,7 @@
     "footer-social";
     margin: 0 auto;
     width: auto;
-
+    overflow: hidden;
 }
 
 /*** each grid box ***/
@@ -64,7 +64,7 @@ h1, .project-hero2, .project-intro1, .user-research1,
 .Usability-Test2, .visual-design1, .visual-design2, .branding1,
 .branding2, .style-guide1, .style-guide2, .high-fidelity1,
 .high-fidelity2, .çonclusion1, .conclusion2 {
-  font-family: "Anton";
+  font-family: 'Anton', sans-serif;
   font-size: 6rem;
   font-weight: 900;
   padding-bottom: 5rem;
@@ -86,22 +86,14 @@ h1, .project-hero2, .project-intro1, .user-research1,
   grid-area: project-hero2;
 }
 
-p.project-hero2 {
-  font-family: "Raleway";
-  font-size: 4rem;
-  font-weight: 600;
-  padding-top: .5rem;
-  color: black;
-}
-
 /*** project intro ***/
 .project-intro1 {
   grid-area: project-intro1;
 }
 
 
-p.project-intro1 {
-  font-family: "Raleway";
+p .project-intro1 {
+  font-family: 'Raleway', sans-serif;
   font-size: 4rem;
   font-weight: 900;
   padding-top: 2rem;
@@ -118,7 +110,7 @@ p.project-intro1 {
   grid-area: user-research1;
 }
 
-p.user-research1, {
+p .user-research1, {
     font-weight: 200;
     word-wrap: break-word;
     padding: 5rem;
@@ -129,14 +121,9 @@ p.user-research1, {
     padding: 5rem;
 }
 
-h2.user-research2 {
-    font-family: "Lato";
-    font-size: 5rem;
-    padding-top: 2rem;
-}
-
 .Question1 {
     padding-top: 5rem;
+    font-style: italic;
 }
 
 .Chart1, .Chart2 {
@@ -181,13 +168,19 @@ h2.user-research2 {
 }
 
 .username {
-  font-family: "Lato";
+  font-family: 'Lato', sans-serif;
   font-size: 5rem;
   font-weight: 900;
   padding: 5rem 0;
 }
 
+ul {
+  text-decoration: none;
+}
 
+span {
+  font-weight: 600;
+}
 
 /*** user-stories ***/
 .user-stories1 {
@@ -389,7 +382,6 @@ h2.user-research2 {
       margin: 1%;
       width: 80%;
   }
-
 
   .footer-container {
       background-color: #F8FAF6;
